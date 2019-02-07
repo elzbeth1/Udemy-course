@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <style>
+       #footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+       }
+    </style>
+     </head>
+    <body>
+        <div data-role="page" id="page1">
+            <div data-role = "header">
+                <h1> UI samples</h1>
+            </div><!--header-->
+            <div data-role="main" class="ui-conents">
+                <button onclick="location.href='index3.html#page2'"> Press here! </button>
+            </div><!--main-->
+            <div data-role="collapsible-set">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3> collapsibe one </h3>
+                    <p> This area is collapsibe. Put your content here"</p> 
+                </div><!--collapsible-->
+                <div data-role="collapsible">
+                    <h3> collapsibe two </h3>
+                    <p> This area is collapsibe. Put your content here"</p> 
+                </div><!--collapsible-->
+            </div><!--collapsible set-->
+            <div data-role="footer" id="footer">
+                <h2> LearntoProgram.tv</h2>
+            </div><!--footer-->
+        </div><!--page-->
+        <div data-role="page" id="page2">
+            <div data-role = "header">
+                <h1> UI samples 2</h1>
+            </div><!--header-->
+            <div data-role="main" class="ui-conents">
+                <fieldset data-role="conrolgroup" data-mini="true">
+                    <legend> Bands: </legend>
+                    <input type="checkbox" name="journey" id="journey">
+                    <label for="journey">Jouney</label>
+                    <input type="checkbox" name="5 SOS" id="5 SOS">
+                    <label for="5 SOS">5 SOS</label>
+                    <input type="checkbox" name="Walows" id="Wallows">
+                    <label for="Wallows">Wallows</label>
+                </fieldset><!--controlgroup-->
+                <button onclick="location.href='index.html#page1'"> Press here! </button>
+            </div><!--main-->
+            <div data-role="footer" id="footer">
+                <h2> LearntoProgram.tv</h2>
+            </div><!--footer-->
+        </div><!--page-->
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
